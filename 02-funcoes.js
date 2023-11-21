@@ -72,9 +72,13 @@ const saudacao = cliente => console.log("Olá " + cliente);
 saudacao("Fulano")
 saudacao("Beltrano")
 
-const calculeMetade = valor => {
+// Arrow Function padrão com retorno EXPLÍCITO
+const calculeMetadeOriginal = valor => {
     return valor / 2;
 };
+
+// Arrow Function com retorno IMPLÍCITO
+const calculeMetade = valor => valor / 2;
 
 let resultadoA = calculeMetade(100);
 let resultadoB = calculeMetade(741);
