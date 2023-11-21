@@ -23,3 +23,25 @@ exemplo2();
 function exemplo2() {
     console.log("Função nomeada!");
 }
+
+/* 
+    Exercícios
+
+    1) Crie uma função (qualquer sintaxe) que rebeba dosi valores numéricos,
+    calcule a diferença entre eles e retorne o resultado.
+
+    2) Chame esta função duas vezes passando valores diferente e guardando-os e, variáveis
+    de escopo global.
+
+    3) Mostre os valores processados pela função no terminal.
+*/
+
+function diferancaEntreNumero(num1, num2) {
+    return num1 - num2;
+}
+
+let resultado1 = diferancaEntreNumero(5, 10);
+let resultado2 = diferancaEntreNumero(20, 5);
+
+console.log(resultado1);
+console.log(resultado2)
