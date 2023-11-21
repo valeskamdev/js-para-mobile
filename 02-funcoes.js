@@ -45,3 +45,39 @@ let resultado2 = diferancaEntreNumero(20, 5);
 
 console.log(resultado1);
 console.log(resultado2)
+
+/* 
+    Sintaxe Arrow Function
+
+*/
+
+const exemplo3 = () => {
+    console.log("Arrow Function!");
+};
+
+exemplo3();
+
+// const saudacao = (cliente) => {
+//     console.log("Olá " + cliente);
+// }
+
+// Omitir os parênteses do parâmetro (SOMENTE QUANDO FOR 1)
+// const saudacao = cliente => {
+//     console.log("Olá " + cliente);
+// }
+
+// Omitir as { } (SOMENTE QUUANDO FOR UMA ÚNICA INSTRUÇÃO)
+const saudacao = cliente => console.log("Olá " + cliente);
+
+saudacao("Fulano")
+saudacao("Beltrano")
+
+const calculeMetade = valor => {
+    return valor / 2;
+};
+
+let resultadoA = calculeMetade(100);
+let resultadoB = calculeMetade(741);
+
+console.log(resultadoA);
+console.log(resultadoB);
