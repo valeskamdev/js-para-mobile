@@ -46,9 +46,14 @@ let resultado2 = diferancaEntreNumero(20, 5);
 console.log(resultado1);
 console.log(resultado2)
 
+
+const diferancaEntreNumeroArrow = (num1, num2) => num1 - num2;
+
+console.log(diferancaEntreNumeroArrow(50, 20));
+console.log(diferancaEntreNumeroArrow(101, 6));
+
 /* 
     Sintaxe Arrow Function
-
 */
 
 const exemplo3 = () => {
