@@ -46,8 +46,21 @@ let resultado2 = diferancaEntreNumero(20, 5);
 console.log(resultado1);
 console.log(resultado2)
 
+// function diferancaEntreNumero((num1, num2){
+/* Versão 1: variável de escopo LOCAL */
+// let resultado = num1 - num2;
+// return resultado;
 
-const diferancaEntreNumeroArrow = (num1, num2) => num1 - num2;
+/* Versão 2 */
+// return num1 - num2;
+// }
+
+// const diferancaEntreNumero = ((num1, num2 => {
+//     return Math.abs(num1 - num2);
+// };
+
+// Arrow function simplificada (sem chaves, return explícito)
+const diferancaEntreNumeroArrow = (num1, num2) =>  Math.abs(num1 - num2);
 
 console.log(diferancaEntreNumeroArrow(50, 20));
 console.log(diferancaEntreNumeroArrow(101, 6));
