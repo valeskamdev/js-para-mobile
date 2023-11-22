@@ -34,4 +34,4 @@ São uma maneira de separar lógicas/funcionalidades/dados em arquivos dedicados
 
 Ao exportar apenas **um recurso**, utiliza-se `export default nomeDoRecurso`. Ao exportar **um ou mais** recursos, utiliza-se `export { recurso1, recurso2, recursoN }`.
 
-Ao importar apenas ** um recurso** utiliza-se `import nomdeDoRecurso from "./local/nomeDoModulo"`. Ao importar **um ou mais** recursos, utiliza-se `export { recurso1, recursoN } from "./local/nomeDoModulo"`.
+Ao importar apenas **um recurso** utiliza-se `import nomdeDoRecurso from "./local/nomeDoModulo"`. Ao importar **um ou mais** recursos, utiliza-se `export { recurso1, recursoN } from "./local/nomeDoModulo"`.
