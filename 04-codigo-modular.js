@@ -5,6 +5,7 @@
 
 import { pessoa, livro, alunos as reprovados } from './modules/dados.js';
 import alunos from './modules/alunos.js';
+import {converteMaisculas, converteMinusculas, formataMoeda } from './modules/funcoes.js';
 
 console.log("\n");
 console.log(reprovados); // usando módulo alunos através de apelido
@@ -29,3 +30,16 @@ console.log(livro.volume);
 for (const livroKey in livro) {
   console.log(livro[livroKey]);
 }
+
+console.log("\n");
+
+console.log(converteMaisculas(reprovados[0]));
+console.log(converteMinusculas(alunos[0]));
+
+let preco1 = 1200.88;
+let preco2 = 1000000.75;
+let preco3 = 500.8452;
+
+console.log(formataMoeda(preco1));
+console.log(formataMoeda(preco2));
+console.log(formataMoeda(preco3));
