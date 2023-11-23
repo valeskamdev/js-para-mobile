@@ -20,7 +20,7 @@ console.log(melissa);
 console.log("\n");
 
 const unidades = ["Penha", "Tatuapé", "Itaquera", "São Miguel"];
-const [penha, tatuape, , saoMiguel] = unidades;  // pulando um item do array
+const [penha, tatuape, , saoMiguel] = unidades;  // pulando um item do array ( PODENDO COLOCAR QUALQUER NOME NA VARIÁVEL )
 
 console.log(penha);
 console.log(tatuape);
@@ -55,3 +55,47 @@ for (const produto of produtos) {
 console.log(converter("Eliseu"));
 console.log(converter("Katia"));
 console.log(converter(produtos[0]));
+
+console.log("\n");
+
+const pessoa = {
+  nome: "Andre",
+  idade: 19,
+  bairro: "Penha",
+  situacao: "crítica"
+}
+
+const { nome, idade, bairro, situacao } = pessoa; // Destructuring em objetos ( ACESSADO SOMENTE ATRAVÉS DO NOME DA PROPRIEDADE )
+
+console.log(`O aluno ${nome} está em situação ${situacao} no curso.`);
+console.log(`Mora na ${bairro} e mesmo assim sempre atrasado...`);
+
+console.log("\n");
+
+// Criando um apelido para a propriedade 'codigo'
+const { codigo: pedido, cursos, preco } = { codigo: "123abc", cursos: ["Figma", "Node.js"], preco: 1000 }
+
+console.log(pedido); // pedido é o apelido para a propriedade 'codigo'
+console.log(cursos);
+console.log(preco);
+
+console.log("\n");
+
+// Destrucuring para parâmetros de função
+
+function exibirDados(objeto) {
+  console.log(`Filme: ${objeto.titulo} - Ano: ${objeto.ano}`);
+}
+
+const filme1 = {
+  titulo: "Vingadores",
+  ano: 2012
+}
+
+const filme2 = {
+  titulo: "Barbie",
+  ano: 2023
+}
+
+exibirDados(filme1);
+exibirDados(filme2);
