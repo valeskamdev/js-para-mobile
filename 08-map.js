@@ -13,7 +13,7 @@ const numeros = [10, 20, 5, 12, 66, 50];
 const numerosDobrados = numeros.map(num => num * 2);
 
 console.log(numerosDobrados);
-console.log("\n");
+console.log('\n');
 
 console.log(cursos);
 
@@ -32,4 +32,13 @@ console.log(titulos);
  */
 
 const precoComDesconto = cursos.map(cursos => cursos.preco * 0.9);
-console.log(precoComDesconto);
+
+const precoComDesconto2 = cursos.map(cursos => {
+    return {
+      ...cursos,
+      preco: cursos.preco * 0.9,
+    };
+  },
+);
+
+console.log(precoComDesconto2);
