@@ -33,10 +33,10 @@ console.log(titulos);
 
 const precoComDesconto = cursos.map(cursos => cursos.preco * 0.9);
 
-const precoComDesconto2 = cursos.map(cursos => {
+const precoComDesconto2 = cursos.map(curso => {
     return {
-      ...cursos,
-      preco: cursos.preco * 0.9,
+      ...curso,
+      preco: curso.preco * 0.9,
     };
   },
 );
