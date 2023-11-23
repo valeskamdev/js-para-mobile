@@ -21,3 +21,15 @@ console.log(cursos);
 const titulos = cursos.map(nome => nome.titulo);
 
 console.log(titulos);
+
+/*
+  Exercício
+
+  Use o map para gerar um novo array APENAS com os preços calculados com um desconto de 10%.
+
+  Opção 1: valor - valor * 0.10
+  Opção 2: valor * 0.9
+ */
+
+const precoComDesconto = cursos.map(cursos => cursos.preco * 0.9);
+console.log(precoComDesconto);
