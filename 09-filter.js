@@ -1,3 +1,5 @@
+import cursos from "./modules/cursos.js"
+
 /*
   filter (filtrar)
 
@@ -22,3 +24,15 @@ const resultados = alunos.filter(aluno => aluno.startsWith("M") && aluno.endsWit
 
 console.log(alunos);
 console.log(resultados);
+
+console.log("\n");
+
+// Filtrando cursos
+
+// Filtrando por cursos da categoria Design
+const cursosDesign = cursos.filter(curso => curso.categoria === "Design");
+console.log(cursosDesign);
+
+// Filtrando por cursos que NÃO SÃO da categoria Design
+const todosCursosMenosDesign = cursos.filter(curso => curso.categoria !== "Design");
+console.log(todosCursosMenosDesign);
