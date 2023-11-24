@@ -36,9 +36,19 @@ const precoComDesconto = cursos.map(cursos => cursos.preco * 0.9);
 const precoComDesconto2 = cursos.map(curso => {
     return {
       ...curso,
-      preco: curso.preco * 0.9,
+      preco: curso.preco * 0.9
     };
   },
 );
 
 console.log(precoComDesconto2);
+
+/*
+  Simplificar a arrow function: é necessário envolver
+  o código de return implícito com parênteses
+ */
+const precoComDesconto3 = cursos.map(curso =>
+  ({ ...curso, preco: curso.preco * 0.9 })
+);
+
+console.log(precoComDesconto3);
