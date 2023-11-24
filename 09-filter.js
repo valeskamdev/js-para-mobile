@@ -36,3 +36,22 @@ console.log(cursosDesign);
 // Filtrando por cursos que NÃO SÃO da categoria Design
 const todosCursosMenosDesign = cursos.filter(curso => curso.categoria !== "Design");
 console.log(todosCursosMenosDesign);
+
+/*
+  Desafio
+
+  Gere um novo array com os cursos que atendam os seguintes critérios:
+  - Categorias Front-End e Mobile
+  - Preços acima de 600
+ */
+
+const cursosDesafio = cursos.filter(curso => (curso.categoria === "Front-End" || curso.categoria === "Mobile") && curso.preco > 600);
+console.log(cursosDesafio);
+
+console.log("\n");
+
+const cursosMobile = cursos
+  .filter(curso => curso.categoria === 'Mobile')
+  .map(curso => curso.titulo);
+
+console.log(cursosMobile);
