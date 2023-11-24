@@ -1,3 +1,5 @@
+import cursos from './modules/cursos.js';
+
 /*
   Reduce (reduzir, redução)
 
@@ -33,3 +35,16 @@ for (const valor of valores) {
 }
 
 console.log(acumuladora2); // 1265
+
+console.log("\n");
+
+// Exercício: faça a soma dos preços de todos os cursos
+const totalCurso = cursos.reduce((acumulador, curso) => acumulador + curso.preco, 0);
+console.log(totalCurso);
+
+// Desafio: faça a soma dos preços dos cursos de Front e Back-End
+const totalComFilter = cursos
+  .filter(curso => curso.categoria === "Back-End" || curso.categoria === "Front-End")
+  .reduce((acumulador, curso) => acumulador + curso.preco, 0);
+
+console.log(totalComFilter);
