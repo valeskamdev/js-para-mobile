@@ -60,3 +60,9 @@ Percorre os elementos do array filtrando seus valores de acordo com uma ou mais 
 ### reduce
 
 Percorre os elementos do array realizando operações (soma, multiplicação, concatenação etc), gerando um único resultado.
+
+### Comunicação assíncrona
+
+No Javascript moderno utilizamos comunicação assíncrona com APIs REST o comando `fetch`.
+
+Você pode usar o `fetch` como **Promises** (recursos assíncronos) encadeado com as funções `then` e `catch` (para tratamento de erros genéricos), ou usando a sintaxe `async/await` através de funções.
